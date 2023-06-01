@@ -5,9 +5,9 @@
 }
 
 /**{
-    border: 1px solid black !important;
-}
-*/
+    border: 1px solid red !important;
+}*/
+
 .titulo-principal, .titulo-secundario, .titulo-terciario{
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursiva;
@@ -43,9 +43,17 @@
 
 .apresentacao__dia__na__galeria{
     padding: 0px 16px;
+    
 }
 
-.apresentacao__dia__na__galeria-imagem-1{
+.apresentacao__dia__na__galeria-imagens{
+    background-image: url(imagens/galeria.jpg);
+    width: 343px;
+    height: 320px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     padding-top: 120px ;
 }
 
@@ -83,4 +91,75 @@
     font-size: 1em;
     line-height: 26px;
     letter-spacing: 0.8px; 
+}
+
+@media screen and (min-width: 768px) {
+
+    .cabecalho{
+        display: flex;
+
+    }
+
+    .obra-observadores{
+        display: none;
+    }
+
+    .obra-observadores-tablet{
+        background-image: url(imagens/tableobra1.png);
+        background-repeat: no-repeat;
+        min-width: max-content;
+        background-size: contain;
+        min-width: 437px;
+        min-height: 700px;
+        
+
+    }
+
+    .titulo-principal{
+        color: black;
+        font-size: 4.375em;
+        line-height: 65px;
+    }
+
+    .apresentacao__dia__na__galeria{
+        padding: none;
+    }
+    
+    .apresentacao__dia__na__galeria-imagem-1{
+        padding-top: none ;
+    }
+
+    .apresentacao__da__galeria{
+        position: absolute;
+        padding: none;
+        top: 145px;
+        left: 389px;
+        right: 40px;
+        
+    }
+
+    .apresentacao__dia__na__galeria {
+        padding: none;
+    }
+
+    .apresentacao__dia__na__galeria-tablet{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 120px;
+        padding-right: 24px;
+
+    }
+
+    .apresentacao__dia__na__galeria-imagens{
+        background-image: url(imagens/tabletgaleria.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .apresentacao__dia__na__galeria-conteudo{
+        padding: 36px 68px 65px 23px;
+
+        
+    }
 }
