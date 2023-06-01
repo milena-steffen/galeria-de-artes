@@ -2,15 +2,16 @@
 
 :root{
     background-color: white;
+   
 }
 
-/**{
+*{
     border: 1px solid red !important;
-}*/
+}
 
 .titulo-principal, .titulo-secundario, .titulo-terciario{
     text-transform: uppercase;
-    font-family: 'Big Shoulders Display', cursiva;
+    font-family: 'Big Shoulders Display', cursive;
     font-weight: 900;
 
 }
@@ -25,7 +26,7 @@
 }
 
 .texto-da-pagina{
-    font-family: 'Outfit', sem serifa;
+    font-family: 'Outfit', sans-serif;
     padding: 32px 0px 32px 0px;
     font-size: 1.125em;
     font-weight: 300;
@@ -111,8 +112,6 @@
         background-size: contain;
         min-width: 437px;
         min-height: 700px;
-        
-
     }
 
     .titulo-principal{
@@ -135,11 +134,10 @@
         top: 145px;
         left: 389px;
         right: 40px;
-        
     }
 
     .apresentacao__dia__na__galeria {
-        padding: none;
+        padding: none !important;
     }
 
     .apresentacao__dia__na__galeria-tablet{
@@ -154,12 +152,63 @@
         background-image: url(imagens/tabletgaleria.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        width: 100%;
         
     }
 
     .apresentacao__dia__na__galeria-conteudo{
         padding: 36px 68px 65px 23px;
-
+        justify-items: left;
         
     }
-}
+
+    .titulo-secundario{
+        width: 223px;
+        height: 135px;  
+    }
+
+    
+    .texto-da-pagina{
+        width: 223px;
+        height: 140px; 
+    }
+
+    .apresentacao__dia__na__galeria-tablet-segundo-bloco{
+        display: flex;
+        background-size: contain;
+        padding: 11px 24px 120px 23px;
+        
+    }
+    .apresentacao__dia__na__galeria-tablet-segundo-bloco-imagem{
+        background-image: url(imagens/tabletobra2.jpg);
+        width: 398px;
+        height: 720px;
+        background-size: cover
+    }
+
+    .apresentacao__dia__na__galeria-imagem-3{
+        background-image: url(imagens/tabletobra3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 280px;
+        height: 313px;
+        padding-right: 10px;
+        
+    }
+
+    .apresentacao__dia__na__galeria-tablet-segundo-bloco-colunas{
+        padding: none;
+        
+    }
+
+  
+
+    .apresentacao__dia__na__galeria-convite{
+        padding: 30px;
+        width: 280px;
+        height: 396px;
+
+    }
+    }
+
+
