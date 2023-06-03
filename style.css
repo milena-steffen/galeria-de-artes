@@ -175,7 +175,6 @@
 
     .apresentacao__dia__na__galeria-tablet-segundo-bloco{
         display: flex;
-        background-size: contain;
         padding: 11px 24px 120px 23px;
         
     }
@@ -186,28 +185,34 @@
         background-size: cover
     }
 
-    .apresentacao__dia__na__galeria-imagem-3{
-        background-image: url(imagens/tabletobra3.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 280px;
-        height: 313px;
-        padding-right: 10px;
-        
-    }
+
+
 
     .apresentacao__dia__na__galeria-tablet-segundo-bloco-colunas{
         padding: none;
         
     }
 
-  
+    .apresentacao__dia__na__galeria-imagem-3{
+        display: flex;
+        
+    }
+
+    .apresentacao__dia__na__galeria-imagem3-tablet{
+        width: 280px;
+        height: 313px;
+        background-size: contain;
+    }
 
     .apresentacao__dia__na__galeria-convite{
         padding: 30px;
         width: 280px;
         height: 396px;
 
+    }
+
+    .rodapedagaleria{
+        position: absolute;
     }
     }
 
