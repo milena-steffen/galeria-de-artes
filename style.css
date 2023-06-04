@@ -182,17 +182,17 @@
        
     }
 
+    .imagem-banco{
+        display: flex;
+        height: 100%;
+    }
+
+
     .apresentacao__dia__na__galeria-tablet-segundo-bloco-colunas{
         display: flex;
         flex-direction: column;
         flex-grow: 1;
 
-    }
-
-    .apresentacao__dia__na__galeria-tablet-segundo-bloco-obra-2{
-        max-width: 280px;
-        max-height: 313px;
-        
     }
 
     .apresentacao__dia__na__galeria-convite{
