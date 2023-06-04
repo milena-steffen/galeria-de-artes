@@ -98,7 +98,6 @@
 
     .cabecalho{
         display: flex;
-
     }
 
     .obra-observadores{
@@ -145,6 +144,7 @@
         flex-direction: row-reverse;
         padding-top: 120px;
         padding-right: 24px;
+        background-size: cover;
 
     }
 
@@ -152,14 +152,12 @@
         background-image: url(imagens/tabletgaleria.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
-        
+        width: 60%;
     }
 
     .apresentacao__dia__na__galeria-conteudo{
-        padding: 36px 68px 65px 23px;
-        justify-items: left;
-        
+        padding: 11px 68px 0px 23px;
+        justify-items: center;
     }
 
     .titulo-secundario{
@@ -173,47 +171,44 @@
         height: 140px; 
     }
 
+
     .apresentacao__dia__na__galeria-tablet-segundo-bloco{
-        display: flex;
+        display: grid;   
+        grid-template-columns: 50% 50%; 
+        justify-content: space-between;
         padding: 11px 24px 120px 23px;
-        
+        min-height: 720px; 
+        min-width: 689px
+       
     }
-    .apresentacao__dia__na__galeria-tablet-segundo-bloco-imagem{
-        background-image: url(imagens/tabletobra2.jpg);
-        width: 398px;
-        height: 720px;
-        background-size: cover
-    }
-
-
-
 
     .apresentacao__dia__na__galeria-tablet-segundo-bloco-colunas{
-        padding: none;
-        
-    }
-
-    .apresentacao__dia__na__galeria-imagem-3{
         display: flex;
-        
+        flex-direction: column;
+        flex-grow: 1;
+
     }
 
-    .apresentacao__dia__na__galeria-imagem3-tablet{
-        width: 280px;
-        height: 313px;
-        background-size: contain;
+    .apresentacao__dia__na__galeria-tablet-segundo-bloco-obra-2{
+        max-width: 280px;
+        max-height: 313px;
+        
     }
 
     .apresentacao__dia__na__galeria-convite{
-        padding: 30px;
-        width: 280px;
-        height: 396px;
-
+        padding: none;
+        justify-items: center;
+        background-size: contain;
+        min-width: 280px;
+        min-height: 396px;
     }
 
     .rodapedagaleria{
-        position: absolute;
-    }
-    }
+        
+        width: 768px;
+        height: 216px;
 
-
+    }
+    @media screen and (min-width: 1440px) {
+}
+}
