@@ -22,12 +22,20 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img class="obra-observadores" src="imagens/obra1.png" alt="Retrato de obra ao fundo com observadores" width="100%">
+        <div class="fundo-cabecalho"></div>
+        <div class="imagens-cabecalho">
+            <img class="obra-observadores" src="imagens/obra1.png" alt="Retrato de obra ao fundo com observadores" width="100%">
+        </div>
         <div class="obra-observadores-tablet"></div>
             <section class="apresentacao__da__galeria">
-                <h1 class="titulo-principal">Modern <br> Art Gallery</h1>
-                <p class="texto-da-pagina">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inpire you? <br> Visit us and find out. </p>
-                <a class="apresentacao__da__galeria-botao-localizacao" href="localizacao.html"><img src="imagens/iconelocalizacao.svg" alt="Localização galeria de artes"></a>
+                <div class="apresentacao__da__galeria-desktop">
+                    <h1 class="titulo-principal">Modern <br> Art Gallery</h1>
+
+                    <div class="desktop-conteudo">
+                        <p class="texto-da-pagina">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inpire you? <br> Visit us and find out. </p>
+                        <a class="apresentacao__da__galeria-botao-localizacao" href="localizacao.html"><img src="imagens/iconelocalizacao.svg" alt="Localização galeria de artes"></a> </div>
+                    </div>   
+                </div>
             </section>
     </header>
     
@@ -42,6 +50,7 @@
         <div class="apresentacao__dia__na__galeria-tablet-segundo-bloco">
 
             <div class="imagem-banco">
+                <source srcset="imagens/desktopobra2.jpg" class="apresentacao__dia__na__galeria-desktop-segundo-bloco-obra-2" media="(min-width: 1024px)" width="100%">
                 <source srcset="imagens/tabletobra2.jpg" class="apresentacao__dia__na__galeria-tablet-segundo-bloco-obra-2" media="(min-width: 768px)" width="100%">
                 <img class="apresentacao__dia__na__galeria-tablet-segundo-bloco-imagem" src="imagens/obra2.jpg" alt="Imagem da galeria com obra de arte ao fundo e banco na parte central" width="100%">
             </div>
@@ -62,9 +71,18 @@
         </div>
     </section>
 
-    <footer class="rodapedagaleria">
-        <h3 class="titulo-terciario">Modern <br>Art  Gallery</h3>
-        <p class="texto-secundario">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+    <footer>
+        <div class="rodapedagaleria">
+            <h3 class="titulo-terciario">Modern <br>Art  Gallery</h3>
+            <div class="rodape-conteudo">
+                <p class="texto-secundario">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+                <div class="rodape__galeria__de__artes-logos">
+                    <a  href="#"><img class="logos" src="imagens/facebooklogo.png" alt="Logo do facebook da galeria de arte"></a>
+                    <a  href="#"><img class="logos" src="imagens/intagramlogo.png" alt="Logo do Instagram da galeria de arte"></a>
+                    <a  href="#"><img class="logos" src="imagens/twitterlogo.png" alt="Logo do Twiter da galeria de arte"></a>
+                </div>
+            </div>
+        </div>
     </footer>
     
 </body>

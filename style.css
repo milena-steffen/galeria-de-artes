@@ -5,9 +5,9 @@
    
 }
 
-*{
+/**{
     border: 1px solid red !important;
-}
+}*/
 
 .titulo-principal, .titulo-secundario, .titulo-terciario{
     text-transform: uppercase;
@@ -33,18 +33,13 @@
     line-height: 28px;   
 }
 
-/*  background-image: url(imagens/iconelocalizacao.svg);
-    background-repeat: no-repeat;
-    max-width: 100%;
-    background-size: contain;
-    height: 72px;
-    width: 260px;
-}
-*/
-
 .apresentacao__dia__na__galeria{
     padding: 0px 16px;
     
+}
+
+.apresentacao__dia__na__galeria-tablet-segundo-bloco{
+    margin-bottom: 60px;
 }
 
 .apresentacao__dia__na__galeria-imagens{
@@ -68,6 +63,7 @@
     padding: 16px 0px;
 }
 
+
 .apresentacao__dia__na__galeria-convite{
     background-color: black;
     color:white;
@@ -77,13 +73,12 @@
 .rodapedagaleria{
     background-color: black;
     color: white;  
-    padding: 48px 32px 48px 32px;
-    margin-top: 120px;
+    padding: 48px 32px 48px 32px;    
 }
 
 .titulo-terciario{
     font-size: 1.5em;
-    padding: 0px 232.95px 38px 0px;
+    padding: 0px 0px 38px 0px;
 }
 
 .texto-secundario{
@@ -93,6 +88,17 @@
     line-height: 26px;
     letter-spacing: 0.8px; 
 }
+
+.rodape__galeria__de__artes-logos a{
+    margin-right: 15px;
+    
+}
+
+.logos {
+    position: relative;
+    top: 10px;
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -142,8 +148,9 @@
     .apresentacao__dia__na__galeria-tablet{
         display: flex;
         flex-direction: row-reverse;
+       justify-content: space-between;
         padding-top: 120px;
-        padding-right: 24px;
+        margin-right: 24px;
         background-size: cover;
 
     }
@@ -156,7 +163,7 @@
     }
 
     .apresentacao__dia__na__galeria-conteudo{
-        padding: 11px 68px 0px 23px;
+        padding: 11px 0px 0px 23px;
         justify-items: center;
     }
 
@@ -165,12 +172,10 @@
         height: 135px;  
     }
 
-    
     .texto-da-pagina{
         width: 223px;
         height: 140px; 
     }
-
 
     .apresentacao__dia__na__galeria-tablet-segundo-bloco{
         display: grid;   
@@ -185,14 +190,20 @@
     .imagem-banco{
         display: flex;
         height: 100%;
+        
     }
-
 
     .apresentacao__dia__na__galeria-tablet-segundo-bloco-colunas{
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+        gap: 1rem;
+        padding-left: 1rem;
 
+    }
+
+    .logos {
+        margin: none;
     }
 
     .apresentacao__dia__na__galeria-convite{
@@ -204,11 +215,117 @@
     }
 
     .rodapedagaleria{
-        
-        width: 768px;
-        height: 216px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+        background-size: contain;
+        margin-top: none;
+        height: 100%;
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .rodape-conteudo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .rodape_conteudo{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .texto-secundario{
+        padding: none;
+        padding-right: 100px ;
+        width: 281px;
+        height: 104px;
 
     }
-    @media screen and (min-width: 1440px) {
+
+    .rodape__galeria__de__artes-logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        justify-items: start;
+        padding: none;
+    }
+    @media screen and (min-width: 1024px) {
+
+    .cabecalho{
+        display: flex;
+        flex-direction: grid;
+        grid-template-columns: 33% 33% 33%;
+        
+        }
+
+    .fundo-cabecalho{
+        width: 50%;
+        background-color: black;
+        position: relative;
+
+        } 
+
+
+    .titulo-principal{
+        color: white;
+        position: absolute;
+        left: -200px;
+        top: 100px;
+    
+    }
+
+    .obra-observadores-tablet{
+        background-image: url(imagens/desktopobra1.jpg);
+        background-repeat: no-repeat;
+        justify-content: flex-start;
+        width: 100%;
+        background-size: contain;
+    }
+   
+    .apresentacao__da__galeria-desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        
+    }
+
+
+    .imagem-banco{
+        display: flex;
+        height: 100%;
+            
+        }
+    }
+
+    .desktop-conteudo{
+        position: absolute;
+        top: 50px;
+        right: 160px;
+
+    }
+
+    .apresentacao__dia__na__galeria-imagens{
+        background-image: url(imagens/desktopgaleria.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 60%;
+    }
+
+    .apresentacao__dia__na__galeria-conteudo{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+
+
+
+
 }
+
+
+
 }

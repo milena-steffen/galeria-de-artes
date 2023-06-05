@@ -77,8 +77,6 @@
 
 .titulo-terciario-localizacao{
     font-size: 1.2em;
-    padding-right: 200.95px;
-    padding-bottom: 38px;
 }
 
 .texto-da-pagina-localizacao{
@@ -88,8 +86,95 @@
     line-height: 26px;
     letter-spacing: 1px; 
     padding-bottom: 58px;
+    padding-top: 38px;
 }
 
 .rodape__galeria__de__artes-logos-redes-sociais a{
     margin-right: 15px;
 }
+
+
+@media screen and (min-width: 768px) {
+
+    .mapa__localizacao__galeria__de__arte{
+        background-image: url(imagens/mapatablet.png);
+        background-repeat: no-repeat;
+        min-width: 100%;
+        max-width: 100%;
+        background-size: cover;
+        width: 375px;
+        height: 550px;
+    }
+
+
+    .endereco__galeria__de__artes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 68px;
+        padding: 88px 40px 80px 39px;
+
+    }
+
+    .titulo-terciario-localizacao{
+        padding-top: 10px;
+    }
+    
+
+    .rodape__galeria-responsividade{
+        display: flex;
+        flex-direction: row;
+        gap: 65px;
+
+        
+    }
+
+    .rodape__galeria__de__artes-logos-redes-sociais{
+        display: flex;
+        flex-direction: row;
+        padding-top: 25px;
+        
+    }
+
+    @media screen and (min-width: 1024px) {
+
+    .mapa__localizacao__galeria__de__arte{
+        background-image: url(imagens/mapadesktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1024px;
+        height: 600px;
+        }
+
+        .endereco__galeria__de__artes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 80px 0px 80px 165px;
+        }
+
+        .texto-da-pagina-localizacao{
+            display: flex;
+            flex-direction: row;
+            width: 600px;
+            height: 100px;
+        }
+
+        .titulo-terciario-localizacao{
+            padding-top: 30px;
+        }
+
+        .rodape__galeria-responsividade{
+            display: flex;
+            flex-direction: row;
+            padding: 0 167px 0 165px;
+            gap: 250px;
+        }
+
+        .rodape__galeria__de__artes-logos-redes-sociais{
+            padding-top: 30px;
+        }
+}
+
+}
+
